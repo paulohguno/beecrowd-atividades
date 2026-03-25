@@ -1,12 +1,4 @@
-const { format } = require('path');
+const input = require('fs').readFileSync('index.txt', 'utf8');
+const lines = input.split('\n');
 
-let input = require('fs').readFileSync('index.txt', 'utf8');
-let lines = input.split('\n')
-
-
-
-
-let valores = lines.map(Number)
-
-let casas = valores.length
 
